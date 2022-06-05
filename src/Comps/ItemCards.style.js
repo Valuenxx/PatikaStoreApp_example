@@ -2,24 +2,26 @@
 import {StyleSheet,Dimensions} from 'react-native';
 
 export default StyleSheet.create({
-    container:{
-        justifyContent: 'center',
-        backgroundColor: '#dadfdc',
+    outcountainer:{
         flex: 1,
-        margin: 5,
-        borderWidth: 1,
-        borderRadius: 5,
-        width: Dimensions.get('window').width / 2.15
 
     },
-    id:{
+    container:{
+        backgroundColor: '#dadfdc',
         flex: 1,
+        flexDirection: 'column',
+        margin: 5,
+        borderRadius: 5,
+        //width: Dimensions.get('window').width / 2.15
+    },
+    id:{
     },
     imgURL:{height: Dimensions.get('window').height / 4,
             borderTopLeftRadius:5,
             borderTopRightRadius:5,
             flex: 1,
             margin: 5,
+            alignItems: 'center',
 
         },
     title:{
@@ -30,7 +32,7 @@ export default StyleSheet.create({
         fontWeight: 'bold',
         color: 'orange',
         margin:3,
-        flex: 1,
+
         
     },
     price:{},

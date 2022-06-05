@@ -5,7 +5,7 @@ import styles from './ItemCards.style'
 
 const ItemCards = ({datas}) => {
     return(
-        <View>
+        <View style={styles.outcountainer}>
             <View style={styles.container}>
                 <Image style={styles.imgURL} source={{uri: datas.imgURL}} />
                 <Text style={styles.title}>{datas.title}</Text>

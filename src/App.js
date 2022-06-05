@@ -7,8 +7,8 @@ import ItemCards from './Comps/ItemCards'
 
 function  App() {
   return (
-    <SafeAreaView  style={styles.outcontainer}>
-      <View>
+    <SafeAreaView  >
+      <View >
         <FlatList
           numColumns={2}
           data={dataset}
@@ -19,15 +19,6 @@ function  App() {
   );
 };
 
-const styles = StyleSheet.create({
-  outcontainer: {
-    backgroundColor:'white',
-    width: '100%',
-    flexDirection: 'row',
-    margin: 5,
-    flex: 5,
-  }
-})
 
 
 export default App;
